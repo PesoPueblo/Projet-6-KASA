@@ -1,0 +1,29 @@
+.kasa-header{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 68px;
+    display: flex;
+    color: #FF6060;
+    justify-content: space-between;
+    max-width: 1240px;
+    width: 100%;
+}
+.kasa-logohead{
+    width: 210.38px;
+    height: 68px;
+}
+a {
+    text-decoration: none;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 57px;
+}
+.kasa-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none ;
+}
+.active-link{
+    text-decoration:solid;
+}

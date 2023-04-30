@@ -1,0 +1,90 @@
+
+.kasa-img-banner{
+  max-width: 1240px;
+  width: 100%;
+  height: 223PX;
+  border-radius: 25px;
+  object-fit: cover;
+  align-items: center;
+}
+.kasa-apropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    height: 223px;
+    width: 100%;
+    max-width: 1240px;
+}
+
+.kasa-404{
+  color: #ff6060;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 186px;
+  padding-bottom: 159px;
+}
+.kasa-404 h1 {
+  font-size: 288px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin: auto;
+}
+.kasa-404 h2 {
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+font-size: 36px;
+}
+.kasa-404 a {
+  margin-top: 182px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ff6060;
+}
+.kasa-hometitle{
+  background-image: url(../asset/IMG.jpg);
+}
+.kasa-abouttitle{
+  background-image: url(../asset/kalen.jpg);
+}
+.kasa-hometitle, .kasa-abouttitle{
+  mix-blend-mode:luminosity;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1240px;
+}
+.kasa-hometitle h1, .kasa-abouttitle h1{
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 25px;
+  height: 223px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.kasa-homeBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
