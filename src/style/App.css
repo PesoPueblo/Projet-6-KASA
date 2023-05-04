@@ -83,3 +83,33 @@ font-size: 36px;
   padding: auto;
   margin:43px 100px 43px 100px;
 }
+@media (max-width: 550px){
+  #root{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .kasa-banner{
+    height: 111px;
+  } 
+  .kasa-banner>h1{
+    height: 111px;
+    font-size: 24px;
+    padding-left: 16px;
+  }
+  .kasa-err{
+    align-items: unset;
+  }
+  .kasa-err h1{
+    font-size: 96px;
+    margin: 180px 57px 0;
+  }
+  .kasa-err h2{
+    font-size: 18px;
+    margin: 11px 57px ;
+  }
+  .kasa-err a{
+    font-size: 14px;
+    margin-top:130px ;
+    align-self: center;
+  }
+}

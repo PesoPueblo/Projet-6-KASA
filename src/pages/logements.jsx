@@ -1,9 +1,9 @@
 import "../style/logement.css"
-import { Slider } from "../components/logements/carroussel"
+import { Slideshow } from "../components/logements/Slideshow"
 import { Owner } from "../components/logements/owner"
 import data from "../datas/logements.json"
 import { Tags } from "../components/logements/tags"
-import { Dropdown } from "../components/dropdown"
+import { Collapse } from "../components/collapse"
 import Rate from "../components/logements/rate"
 import { useLocation } from "react-router-dom"
 import Error from "./Error"
@@ -15,7 +15,7 @@ function Logements() {
   //création du chemin voulu 
   const path= `/logement/${rental}`
   // condition d'echec 
-  if (location != path) {
+  if (location !== path) {
     return( <Error/>)
     
   }
@@ -27,25 +27,25 @@ function Logements() {
     return infosLogement.map((infos) => {    
       return (
         <div className="logement-body" >
-          <Slider slides={infos.pictures} />
+          <Slideshow slides={infos.pictures} />
          <div className="important-infos">
             <div className="rental-name">
               <h1 className="logement-title">{infos.title}</h1>
              <p className="logement-location">{infos.location}</p>
-           </div>
-           <Owner host={infos.host} />
-        </div>
-        <div className="infos-plus">
           <div className="tags-place">
             <Tags keyWords={infos.tags} />
           </div>
+           </div>
+        <div className="infos-plus">
+           <Owner host={infos.host} />
           <div className="stars">
             <Rate rate={infos.rating}/>
           </div>
         </div>
-        <div className="infos-dropdown">
-          <Dropdown titre="Description" content={infos.description}/>
-          <Dropdown titre="Équipements" content={infos.equipments}/>
+        </div>
+        <div className="infos-collapse">
+          <Collapse titre="Description" content={infos.description}/>
+          <Collapse titre="Équipements" content={infos.equipments}/>
         </div>
       </div>
     )

@@ -1,5 +1,6 @@
 *{
     font-family: 'Montserrat';
+    font-weight: 500;
 }
 .sliderContainer{
     display: flex;
@@ -56,7 +57,7 @@
 }
 .host{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     margin: 30px;
 }
@@ -76,7 +77,7 @@
 .important-infos{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 .tags{
     background-color: #ff6060;
@@ -92,27 +93,87 @@
 }
 .tags-place{
     display: flex;
+    margin-top: 20px;
 }
-.infos-dropdown{
+.infos-collapse{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     align-content: space-around;
     flex-wrap: wrap;
 }
-.infos-dropdown > .kasa-about{
+.infos-collapse > .kasa-about{
     width: 45%;
 }
 .infos-plus{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 .stars{
     margin-right: 30px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .stars > img{
     margin-left: 15px;
 }
 .content > li{
     list-style:none;
+}
+
+@media (max-width:550px){
+    .sliderContainer{
+        height: 255px;
+    }
+    .slide {
+        max-height: 255px;
+    }
+    .arrowLeft img, .arrowRight img{
+        height: 100%;
+        width: 100%;
+    }
+    .arrowLeft, .arrowRight {
+        display: flex;
+        height: 20px;
+    }
+    .counter{
+        display: none;
+    }
+    .logement-title{
+        font-size: 18px;
+    }
+    .logement-location{
+        font-size: 14px;
+    }
+    .host-name{
+        font-size: 12px;
+    }
+    .host{
+        margin: 0;
+    }
+    .profil-pict{
+        max-width: 32px;
+        max-height: 32px;
+    }
+    .tags{
+        font-size: 10px;
+        height: 18px;
+        min-width: 84px;
+    }
+    .stars > img {
+        height: 13px;
+    }
+    .infos-collapse > .kasa-about {
+        width: 100%;
+        font-size: 13px;
+    }
+    .important-infos{
+        flex-direction: column;
+    }
+    .infos-plus{
+        flex-direction: row-reverse;
+        margin-top: 16px;
+    }
 }

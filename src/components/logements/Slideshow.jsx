@@ -2,7 +2,7 @@ import { useState } from "react"
 import "../../style/logement.css"
 import gauche from '../../asset/gauche.png'
 import droite from '../../asset/droite.png'
-export function Slider({ slides }) {
+export function Slideshow({ slides }) {
   //state
   const [currentIndex, setCurrentIndex] = useState(0)
   const slideUrl = slides[currentIndex]

@@ -16,7 +16,7 @@
     max-height: 340px;
     display: flex;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0,0.2);
     padding: 0;
     margin: 25px;
 }
@@ -36,4 +36,23 @@
     margin-bottom: 1rem;
     color: white;
     font-family: 'Montserrat';
+}
+@media (max-width:550px){
+    .kasa-gallery{
+       background-color: unset; 
+       margin-top: 0;
+       padding-top: 20px;
+       padding-bottom: 0;
+    }
+    .kasa-card,.card-img,.card-title{
+        max-width: 335px;
+        max-height: 255px ;
+    }
+    .card-img{
+        min-height: 255px;
+    }
+    .kasa-card{
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }

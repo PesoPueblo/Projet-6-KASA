@@ -28,3 +28,13 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width:550px){
+    .kasa-banner, .kasa-banner h1{
+        height: 223px;
+    }
+    .collapsible-tilte, .content{
+        padding: 0;
+        font-size: 13px;
+
+    }
+}

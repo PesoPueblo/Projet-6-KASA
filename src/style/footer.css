@@ -16,3 +16,8 @@
     width: 122px;
     height: 39.4px;
 }
+@media(max-width:550px){
+    .kasa-footer{
+        margin-top: 20px;
+    }
+}

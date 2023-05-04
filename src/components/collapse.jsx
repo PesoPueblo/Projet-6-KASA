@@ -1,7 +1,7 @@
 import { useState } from "react"
 import bas from '../asset/bas.png'
 import haut from '../asset/haut.png'
-export function Dropdown({ titre, content }) {
+export function Collapse({ titre, content }) {
   const [open, setOpen] = useState(false)
   //comportements
   function tabContent (){

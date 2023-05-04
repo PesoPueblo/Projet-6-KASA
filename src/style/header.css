@@ -31,3 +31,20 @@ a {
 .currentpath{
     text-decoration:underline;
 }
+@media (max-width:550px) {
+    .kasa-header{
+        margin:20px 0 20px;
+        width: 100%;
+        max-width: 335px;
+    }
+    .kasa-logohead{
+        width: 175px;
+        height: 47px;
+    }
+    .kasa-nav{
+        font-size: 12px;
+    }
+    a{
+        padding-left: 10px;
+    }
+}
