@@ -27,7 +27,6 @@ export function Slideshow({ slides }) {
         <img src={gauche} alt="fleche gauche" />
       </div>
       <div
-        key={`${slideUrl}-${currentIndex}`}
         style={{ backgroundImage: `url(${slideUrl})` }}
         className="slide"
       ></div>

@@ -15,10 +15,7 @@ function Logements() {
   //création du chemin voulu 
   const path= `/logement/${rental}`
   // condition d'echec 
-  if (location !== path) {
-    return( <Error/>)
-    
-  }
+  if (location !== path) {return( <Error/>)  }
   //affichage voulu si bon chemin
   else {
     //filtrer le tableau data avec l'id recupéré 
@@ -26,7 +23,7 @@ function Logements() {
     //render 
     return infosLogement.map((infos) => {    
       return (
-        <div className="logement-body" >
+        <div className="logement-body" key={rental}>
           <Slideshow slides={infos.pictures} />
          <div className="important-infos">
             <div className="rental-name">
@@ -38,9 +35,7 @@ function Logements() {
            </div>
         <div className="infos-plus">
            <Owner host={infos.host} />
-          <div className="stars">
-            <Rate rate={infos.rating}/>
-          </div>
+          <Rate rate={infos.rating} />
         </div>
         </div>
         <div className="infos-collapse">
