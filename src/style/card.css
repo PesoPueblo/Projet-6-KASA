@@ -1,10 +1,14 @@
 .kasa-gallery{
     max-width: 1240px;
-    display: grid;
-    grid-gap: 110px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: auto;
-    margin:43px 100px 43px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    margin-top: 43px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    
 }
 
 .kasa-card{
@@ -13,14 +17,16 @@
     display: flex;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin: 25px;
 }
 .card-img{
  object-fit: cover;
  object-position: center;
  max-width: 340px;
- height: 340px;
+ min-height: 340px;
  border-radius: 10px;
- mix-blend-mode: darken;
+ mix-blend-mode: multiply;
 }
 .card-title{
     position: absolute;

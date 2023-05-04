@@ -1,9 +1,9 @@
 import '../style/App.css'
 import { Link } from 'react-router-dom'
 
-function Page404() {
+export default function Error() {
   return (
-    <div className='kasa-404'>
+    <div className='kasa-err'>
         <h1 >404</h1>
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
         <Link to="/">Retourner sur la page d'accueil</Link>
@@ -11,5 +11,3 @@ function Page404() {
     
   );
 }
-
-export default Page404;
