@@ -4,6 +4,20 @@ import haut from '../asset/haut.png'
 export function Dropdown({ titre, content }) {
   const [open, setOpen] = useState(false)
   //comportements
+  function tabContent (){
+    if (typeof content === 'string'|| content instanceof String){
+      return ( 
+        <p>{content}</p>
+      )
+    }
+    else {const equips= []
+      for (let index = 0; index < content.length; index++) {
+        equips.push(
+            <li key={`${content[index]}`}>{content[index]}</li>
+        )
+          
+      }return equips}
+  }
   //fonction pour derouler l'élément
   const unwrap = () => {
     setOpen(!open)
@@ -16,7 +30,7 @@ export function Dropdown({ titre, content }) {
       </div>
       {open && (
         <div className="content">
-          <p>{content}</p>
+          {tabContent()}
         </div>
       )}
     </div>

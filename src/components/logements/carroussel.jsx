@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "../../style/logement.css"
-
+import gauche from '../../asset/gauche.png'
+import droite from '../../asset/droite.png'
 export function Slider({ slides }) {
   //state
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,7 +24,7 @@ export function Slider({ slides }) {
   return (
     <div className="sliderContainer">
       <div className="arrowLeft" onClick={previousImage}>
-        ❰
+        <img src={gauche} alt="fleche gauche" />
       </div>
       <div
         key={`${slideUrl}-${currentIndex}`}
@@ -34,7 +35,7 @@ export function Slider({ slides }) {
         {currentIndex + 1}/{slides.length}{" "}
       </div>
       <div className="arrowRight" onClick={nextImage}>
-        ❱
+        <img src={droite} alt="flèche droite" />
       </div>
     </div>
   )

@@ -5,15 +5,28 @@ import data from "../datas/logements.json"
 import { Tags } from "../components/logements/tags"
 import { Dropdown } from "../components/dropdown"
 import Rate from "../components/logements/rate"
+import { useLocation } from "react-router-dom"
+import Error from "./Error"
 function Logements() {
+  //recupération du chemin actuel
+  const location= useLocation().pathname
   //recupère l'id  rental dans le storage
   const rental = sessionStorage.getItem("rental")
+  //création du chemin voulu 
+  const path= `/logement/${rental}`
+  // condition d'echec 
+  if (location != path) {
+    return( <Error/>)
+    
+  }
+  //affichage voulu si bon chemin
+  else {
     //filtrer le tableau data avec l'id recupéré 
     const infosLogement = data.filter((logement) => logement.id === rental);
     //render 
     return infosLogement.map((infos) => {    
       return (
-        <div className="logement-body">
+        <div className="logement-body" >
           <Slider slides={infos.pictures} />
          <div className="important-infos">
             <div className="rental-name">
@@ -37,6 +50,6 @@ function Logements() {
       </div>
     )
   })
- 
+}
 }
 export default Logements

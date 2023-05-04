@@ -64,6 +64,7 @@
     font-weight: 500 ;
     color: #ff6060;
     font-size: 18px;
+    margin-right: 10px;
 }
 .profil-pict{
     object-fit: cover;
@@ -80,7 +81,7 @@
 .tags{
     background-color: #ff6060;
     color: white;
-    margin: 10px;
+    margin: 0 10px 0 0;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -105,4 +106,13 @@
 .infos-plus{
     display: flex;
     justify-content: space-between;
+}
+.stars{
+    margin-right: 30px;
+}
+.stars > img{
+    margin-left: 15px;
+}
+.content > li{
+    list-style:none;
 }

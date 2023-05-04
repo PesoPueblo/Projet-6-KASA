@@ -23,7 +23,11 @@ a {
     display: flex;
     align-items: center;
     list-style-type: none ;
+    font-size: 24px;
 }
 .active-link{
     text-decoration:solid;
+}
+.currentpath{
+    text-decoration:underline;
 }
