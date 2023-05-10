@@ -21,6 +21,7 @@ export function Slideshow({ slides }) {
     setCurrentIndex(newIndex)
   }
   //render
+  if (slides.length!=1){
   return (
     <div className="sliderContainer">
       <div className="arrowLeft" onClick={previousImage}>
@@ -37,5 +38,15 @@ export function Slideshow({ slides }) {
         <img src={droite} alt="flèche droite" />
       </div>
     </div>
-  )
+  )}
+  else {
+    return(
+      <div className="sliderContainer">
+      <div
+        style={{ backgroundImage: `url(${slideUrl})` }}
+        className="slide"
+      ></div>
+    </div>
+    )
+  }
 }

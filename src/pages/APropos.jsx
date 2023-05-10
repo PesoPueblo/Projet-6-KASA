@@ -1,4 +1,3 @@
-import "../style/App.css"
 import "../style/about.css"
 import Banner from "../components/banner"
 import img from "../asset/kalen.jpg"

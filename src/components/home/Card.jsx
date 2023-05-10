@@ -1,4 +1,3 @@
-import "../../style/card.css"
 import data from "../../datas/logements.json"
 import { Link } from "react-router-dom"
 export default function Card() {

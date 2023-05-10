@@ -29,12 +29,14 @@
     align-items: center;
 }
 @media (max-width:550px){
-    .kasa-banner, .kasa-banner h1{
+    .kasa-apropos>.kasa-banner, .kasa-apropos h1{
         height: 223px;
     }
-    .collapsible-tilte, .content{
-        padding: 0;
+    .collapsible-tilte{
+        max-height: 30px;
         font-size: 13px;
-
+    }
+    .content{
+        font-size: 13px;
     }
 }

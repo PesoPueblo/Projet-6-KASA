@@ -14,7 +14,7 @@ function Header() {
         </Link>
       )
     } else {
-      return <Link to="/">Accueil</Link>
+      return <Link to="/" className="link">Accueil</Link>
     }
   }
   //creation d'un lien apropos avec un classname en fonction de l'url en cours
@@ -26,7 +26,7 @@ function Header() {
         </Link>
       )
     } else {
-      return <Link to="/APropos">A Propos</Link>
+      return <Link to="/APropos" className="link">A Propos</Link>
     }
   }
   return (
