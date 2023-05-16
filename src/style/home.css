@@ -63,9 +63,8 @@
 .card-title{
     position: absolute;
     align-self: flex-end;
-    max-width: 340px;
-    margin-left: 1.4%;
-    margin-bottom: 1.4%;
+    max-width: 300px;
+    margin: 0.9%;
     color: white;
     font-size: 18px;
 }

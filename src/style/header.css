@@ -5,6 +5,7 @@
     color: #FF6060;
     justify-content: space-between;
     width: 100%;
+    max-width: 1240px;
 }
 .kasa-logohead{
     width: 210px;
