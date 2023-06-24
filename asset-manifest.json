@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Projet-6-KASA/static/css/main.5d4c47ec.css",
-    "main.js": "/Projet-6-KASA/static/js/main.b0afae64.js",
+    "main.js": "/Projet-6-KASA/static/js/main.71614ec9.js",
     "static/media/kalen.jpg": "/Projet-6-KASA/static/media/kalen.c9f0f60d29c9bf698dfa.jpg",
     "static/media/IMG.jpg": "/Projet-6-KASA/static/media/IMG.f4962aebe70eb02c8a7e.jpg",
     "index.html": "/Projet-6-KASA/index.html",
     "main.5d4c47ec.css.map": "/Projet-6-KASA/static/css/main.5d4c47ec.css.map",
-    "main.b0afae64.js.map": "/Projet-6-KASA/static/js/main.b0afae64.js.map"
+    "main.71614ec9.js.map": "/Projet-6-KASA/static/js/main.71614ec9.js.map"
   },
   "entrypoints": [
     "static/css/main.5d4c47ec.css",
-    "static/js/main.b0afae64.js"
+    "static/js/main.71614ec9.js"
   ]
 }
