@@ -9,9 +9,9 @@ function App() {
     return (
         <div className='kasa-bodys'>
             <Routes>
-                <Route exact path='/' element={<Home/>}/>
-                <Route path='/APropos' element={<APropos/>}/>
-                <Route exact path='/logement/:id' element={<Logements/>}/>
+                <Route exact path='Projet-6-KASA/' element={<Home/>}/>
+                <Route path='Projet-6-KASA/APropos' element={<APropos/>}/>
+                <Route exact path='Projet-6-KASA/logement/:id' element={<Logements/>}/>
                 <Route  path='*' element={<Error/>}/>
             </Routes>
         </div>
